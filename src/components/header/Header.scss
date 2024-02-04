@@ -4,7 +4,7 @@
     justify-content: space-around;
     // background-color: #3498db;
     padding: 10px;
-    
+    // height: 100vh;
     button {
       background-color:red;
       color: #fff;
@@ -21,9 +21,11 @@
   
     @media (max-width: 600px) {
       flex-direction: column;
-  
-      button {
-        margin-bottom: 10px;
+      height: 100vh;
+      .header{
+        button {
+          margin-bottom: 10px;
+        }
       }
     }
   }
