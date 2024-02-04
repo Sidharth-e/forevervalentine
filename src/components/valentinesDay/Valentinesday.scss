@@ -1,0 +1,270 @@
+.valentinesday {
+  display: grid;
+  place-items: center;
+  height: 95vh;
+  padding: 0;
+  margin: 0;
+  background-color: pink;
+  overflow: hidden;
+
+.main {
+  // position: absolute;
+  margin-top: 10%;
+}
+
+.head {
+  height: 50vmin;
+  width: 60vmin;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.head:before,
+.head:after {
+  content: "";
+  display: block;
+  height: 20vmin;
+  width: 25vmin;
+ background:radial-gradient(circle at 50% 70%, rgba(251, 111, 145, 1) 50%, rgba(255, 255, 255, 1) 50%);
+  border-radius: 50% 50% 100% 0% / 50% 100% 0% 50% ;
+  position: relative;
+  z-index: -1;
+}
+
+.head:before {
+  top: -5vmin;
+  left: -6vmin;
+  transform: rotate(-45deg);
+}
+
+.head:after {
+  top: -43vmin;
+  left: 45vmin;
+  transform: rotate(45deg);
+}
+
+.eye1,
+.eye2 {
+  height: 10vmin;
+  width: 10vmin;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(0, 0, 0, 1) 70%, rgba(0, 242, 255, 1) 70%);
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye1 {
+  top: -5vmin;
+  left:10vmin;
+}
+
+.eye2 {
+  top: -15vmin;
+  left: 40vmin;
+}
+
+.eye1:before,
+.eye2:before {
+  content: "";
+  display: block;
+  height: 4vmin;
+  width: 3.5vmin;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  left: 2.5vmin;
+  top: 1vmin;
+}
+
+.eye1:after,
+.eye2:after {
+  content: "";
+  display: block;
+  height: 2vmin;
+  width: 2vmin;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  left: 6.5vmin;
+}
+
+.nose {
+  height: 5vmin;
+  width: 5vmin;
+  background-color: black;
+  border-radius: 61% 39% 0% 100% / 52% 41% 59% 48%;
+  transform: rotate(40deg);
+  position: relative;
+  top: -25vmin;
+  left: 27vmin;
+}
+
+.mouth {
+  height: 5vmin;
+  width: 5vmin;
+  background-color: white;
+  border-radius: 50%;
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  position: relative;
+  top: -25vmin;
+  left: 29.5vmin;
+  transform: rotate(-50deg);
+}
+
+.mouth:before {
+  content: "";
+  display: block;
+  height: 5vmin;
+  width: 5vmin;
+  background-color: white;
+  border-radius: 50%;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  position: relative;
+  top: -4vmin;
+  left: -4vmin;
+  transform: rotate(90deg);
+}
+@keyframes heartbeat {
+  0% {
+    transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(45deg) scale(1);
+  }
+}
+.heart {
+  height: 20vmin;
+  width: 20vmin;
+  background-color: red;
+  transform: rotate(45deg);
+  position: relative;
+  top: -15vmin;
+  left: 20vmin;
+   animation: heartbeat 1s infinite;
+  cursor: pointer;
+
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  display: block;
+  height: 20vmin;
+  width: 20vmin;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+}
+
+.heart:before {
+  top: -9vmin;
+}
+
+.heart:after {
+  top: -20vmin;
+  left: -10vmin;
+}
+
+.paw1,
+.paw2 {
+  height: 20vmin;
+  width: 10vmin;
+  background-color: white;
+  border-radius: 51% 49% 50% 50% / 37% 41% 59% 63%;
+  position: relative;
+}
+
+.paw1 {
+  top: -40vmin;
+  left: 5vmin;
+  transform: rotate(50deg);
+}
+
+.paw2 {
+  top: -60vmin;
+  left: 45vmin;
+  transform: rotate(-50deg);
+}
+
+.paw1:before,
+.paw2:before,
+.paw1:after,
+.paw2:after {
+  content: "";
+  display: block;
+  height: 4vmin;
+  width: 4vmin;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.paw1:before {
+  border-left: 3px solid black;
+  left: 1vmin;
+  top: 1vmin;
+}
+
+.paw1:after {
+  border-left: 3px solid black;
+  left: 3.8vmin;
+  top: -3.5vmin;
+}
+
+.paw2:before {
+  border-right: 3px solid black;
+  left: 1.5vmin;
+  top: 0.5vmin;
+}
+
+.paw2:after {
+  border-right: 3px solid black;
+  left: 4vmin;
+  top: -3.5vmin;
+  z-index: -1;
+}
+
+.check1,
+.check2 {
+  height: 8vmin;
+  width: 8vmin;
+  background-color: #fb6f92;
+  border-radius: 50%;
+  position: relative;
+}
+
+.check1 {
+  top: -95vmin;
+  left: 5vmin;
+}
+
+.check2 {
+  top: -103vmin;
+  left: 45vmin;
+}
+
+.eyebrow1,
+.eyebrow2 {
+  height: 3vmin;
+  width: 5vmin;
+  background-color: white;
+  border-radius: 50%;
+  border-top: 5px solid black;
+  position: relative;
+}
+
+.eyebrow1 {
+  top: -126vmin;
+  left: 12vmin;
+}
+
+.eyebrow2 {
+  top: -130vmin;
+  left: 43vmin;
+}
+}
