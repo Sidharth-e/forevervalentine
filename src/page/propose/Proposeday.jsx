@@ -123,16 +123,16 @@ export default function Proposeday() {
       <div class="paper image">
         <p> and I fallen in</p>
         <p>Love with You 😍 </p>
-        <img alt="pic" src="https://iili.io/HSzXpzg.jpg" />
+        {/* <img alt="pic" src="https://iili.io/HSzXpzg.jpg" /> */}
       </div>
       <div class="paper image">
         <p></p>
-        <img alt="pic" src="https://iili.io/HSzXbmF.jpg" />
+        {/* <img alt="pic" src="https://iili.io/HSzXbmF.jpg" /> */}
       </div>
       <div class="paper image">
         <p>How can be </p>
         <p> someone so cute ❤️ </p>
-        <img alt="pic" src="https://iili.io/HSzXyXa.jpg" />
+        {/* <img alt="pic" src="https://iili.io/HSzXyXa.jpg" /> */}
       </div>
       <div class="paper red">
         <p class="p1"> and My Favorite</p>
